@@ -1,7 +1,5 @@
-import { bitable, UIBuilder, FieldType, ITable, IView, ITextField, IUserField, INumberField, ICurrencyField, IOpenTextSegment, IOpenUser, NumberFormatter } from "@lark-base-open/js-sdk";
+import { UIBuilder, FieldType, ITable, IView, ITextField, IUserField, INumberField, ICurrencyField, IOpenTextSegment, IOpenUser, NumberFormatter } from "@lark-base-open/js-sdk";
 import { UseTranslationResponse } from 'react-i18next';
-
-const table = await bitable.base.getActiveTable();
 
 export default async function main(uiBuilder: UIBuilder, { t }: UseTranslationResponse<'translation', undefined>) {
   uiBuilder.form(form => ({
